@@ -7,7 +7,7 @@ cleanmgr /sageset:1
 echo Configuration saved!
 
 echo Installing Windows Update Scripts
-powershell -NoProfile -ExecutionPolicy Bypass -Command "Install-PackageProvider -Name NuGet -Force; Install-Module PSWindowsUpdate -force"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Install-PackageProvider -Name NuGet -Force; Install-Module PSWindowsUpdate -force"; Import-Module PSWindowsUpdate -Force
 echo Successfully Installed Windows Update Scripts
 
 pause
